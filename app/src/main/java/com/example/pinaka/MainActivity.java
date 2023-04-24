@@ -2,6 +2,7 @@ package com.example.pinaka;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         RecyclerView cardStack = findViewById(R.id.card_stack);
+        cardStack.setLayoutManager(new LinearLayoutManager(this));
         CardStackAdapter adapter = new CardStackAdapter(cardDataList,intent);
         cardStack.setAdapter(adapter);
 
@@ -32,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(swipeItemTouchHelper);
         itemTouchHelper.attachToRecyclerView(cardStack);
 
-        TextView place = findViewById(R.id.textView2);
-        place.setText(intent.getExtras().getString("Name"));
+//        TextView place = findViewById(R.id.textView2);
+//        place.setText(intent.getExtras().getString("Name"));
 
     }
 }
