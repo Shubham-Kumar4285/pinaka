@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Events> cardDataList;
+    private RecyclerView cardStack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        RecyclerView cardStack = findViewById(R.id.card_stack);
+        RecyclerView cardStack = findViewById(R.id.recyclerView);
         cardStack.setLayoutManager(new LinearLayoutManager(this));
         CardStackAdapter adapter = new CardStackAdapter(cardDataList,intent);
         cardStack.setAdapter(adapter);
