@@ -16,6 +16,7 @@ public class DashboardFragment extends Fragment {
 
     private FragmentDashboardBinding binding;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DashboardViewModel dashboardViewModel =
@@ -25,7 +26,8 @@ public class DashboardFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
         return root;
     }
 

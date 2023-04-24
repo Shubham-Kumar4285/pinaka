@@ -1,14 +1,19 @@
 package com.example.pinaka.data;
 
 public class Places {
-    private String url;
+    private int url;
     private String name;
 
-    public String getUrl() {
+    public Places(int url, String name) {
+        this.url = url;
+        this.name = name;
+    }
+
+    public int getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(int url) {
         this.url = url;
     }
 
