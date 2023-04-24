@@ -102,7 +102,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bookmark_x" />
+        app:srcCompat="@drawable/bookmark_x"
+        app:tint="@color/blue" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -114,7 +115,8 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cancel_x" />
+        app:srcCompat="@drawable/cancel_x"
+        app:tint="@color/red" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -125,6 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:srcCompat="@drawable/check_x" />
+        app:srcCompat="@drawable/check_x"
+        app:tint="@color/green" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
