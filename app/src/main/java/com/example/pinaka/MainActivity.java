@@ -17,14 +17,16 @@ import com.example.pinaka.data.Events;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Events> cardDataList;
-    private RecyclerView cardStack;
+    private ArrayList<Events> cardDataList=new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
+        cardDataList.add(new Events(1,"delhi"));
+        cardDataList.add(new Events(2,"mumbai"));
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         RecyclerView cardStack = findViewById(R.id.recyclerView);
         cardStack.setLayoutManager(new LinearLayoutManager(this));
