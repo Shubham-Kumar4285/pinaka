@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         cardDataList.add(new Events(1,"delhi"));
         cardDataList.add(new Events(2,"mumbai"));
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        RecyclerView cardStack = findViewById(R.id.recyclerView);
+        RecyclerView cardStack = findViewById(R.id.card_stack);
         cardStack.setLayoutManager(new LinearLayoutManager(this));
         CardStackAdapter adapter = new CardStackAdapter(cardDataList,intent);
         cardStack.setAdapter(adapter);
