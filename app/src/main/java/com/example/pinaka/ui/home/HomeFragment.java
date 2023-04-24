@@ -48,6 +48,12 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+
+
+    public String[] getPlacesName() {
+        return placesName;
+    }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
