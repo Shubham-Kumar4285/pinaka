@@ -6,13 +6,15 @@ public class Events {
     private String location;
     private String address;
     private String organiser;
+    private long time;
 
-    public Events(int image, String name, String location, String address, String organiser) {
+    public Events(int image, String name, String location, String address, String organiser, long time) {
         this.image = image;
         this.name = name;
         this.location = location;
         this.address = address;
         this.organiser = organiser;
+        this.time = time;
     }
 
     public int getImage() {
@@ -53,5 +55,13 @@ public class Events {
 
     public void setOrganiser(String organiser) {
         this.organiser = organiser;
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
     }
 }
